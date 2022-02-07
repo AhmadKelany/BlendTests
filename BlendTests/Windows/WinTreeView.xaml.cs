@@ -32,6 +32,7 @@ namespace BlendTests.Windows
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
             AccountHierarchies = new ObservableCollection<AccountHierarchy>(DataAccess.AccountsDataAccess.GetAccountHierarchiesFromAccounts(DataAccess.AccountsDataAccess.LoadAccounts()));
+            treeView1.ItemsSource = AccountHierarchies;
         }
 
         private void btnAddAccount_Click(object sender, RoutedEventArgs e)
