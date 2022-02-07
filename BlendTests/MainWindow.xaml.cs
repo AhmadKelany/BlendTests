@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BlendTests.Windows;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,6 +24,17 @@ namespace BlendTests
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void btnTreeView_Click(object sender, RoutedEventArgs e)
+        {
+            WinTreeView win = new();
+            win.Show();
         }
     }
 }
