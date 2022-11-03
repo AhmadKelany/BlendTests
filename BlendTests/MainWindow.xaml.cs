@@ -15,6 +15,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using WPFLocalizeExtension.Engine;
 
 namespace BlendTests
 {
@@ -35,8 +36,7 @@ namespace BlendTests
 
         private void btnTreeView_Click(object sender, RoutedEventArgs e)
         {
-
-            
+            LocalizeDictionary.Instance.Culture = new System.Globalization.CultureInfo("ru");
             //WinTreeView win = new();
             //win.Show();
         }
