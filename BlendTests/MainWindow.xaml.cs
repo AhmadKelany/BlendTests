@@ -36,9 +36,10 @@ namespace BlendTests
 
         private void btnTreeView_Click(object sender, RoutedEventArgs e)
         {
-            LocalizeDictionary.Instance.Culture = new System.Globalization.CultureInfo("ru");
-            //WinTreeView win = new();
-            //win.Show();
+            WinTreeView win = new();
+            win.Show();
+            LocalizeDictionary.Instance.Culture = new System.Globalization.CultureInfo("hi");
+            
         }
     }
 }
