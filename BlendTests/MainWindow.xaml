@@ -4,9 +4,15 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:BlendTests"
+        xmlns:lex="http://wpflocalizeextension.codeplex.com"
         
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800" Loaded="Window_Loaded" Background="LightGoldenrodYellow">
+        Title="MainWindow" Height="450" Width="800" Loaded="Window_Loaded" Background="LightGoldenrodYellow" 
+        lex:LocalizeDictionary.DesignCulture="ru"
+        lex:LocalizeDictionary.IncludeInvariantCulture="False"
+        lex:ResxLocalizationProvider.DefaultDictionary="Resource"
+        lex:ResxLocalizationProvider.DefaultAssembly="BlendTests"
+        >
     <Window.Resources>
         <Style TargetType="Button" >
             <Setter Property="Background" Value="Gold" />
@@ -30,6 +36,6 @@
             <RowDefinition Height="1*"/>
             <RowDefinition Height="1*"/>
         </Grid.RowDefinitions>
-        <Button Content="{x:Static local:Resource.Click_Me}" Margin="5" x:Name="btnTreeView" Click="btnTreeView_Click" />
+        <Button x:Name="Click_Me" Content="{lex:Loc Click_Me}" Margin="5" Click="btnTreeView_Click" />
     </Grid>
 </Window>
