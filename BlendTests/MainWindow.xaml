@@ -4,6 +4,7 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:BlendTests"
+        
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800" Loaded="Window_Loaded" Background="LightGoldenrodYellow">
     <Window.Resources>
@@ -29,6 +30,6 @@
             <RowDefinition Height="1*"/>
             <RowDefinition Height="1*"/>
         </Grid.RowDefinitions>
-        <Button Content="Tree View" Margin="5" x:Name="btnTreeView" Click="btnTreeView_Click" />
+        <Button Content="{x:Static local:Resource.Click_Me}" Margin="5" x:Name="btnTreeView" Click="btnTreeView_Click" />
     </Grid>
 </Window>

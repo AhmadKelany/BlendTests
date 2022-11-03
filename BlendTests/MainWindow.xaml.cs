@@ -1,8 +1,10 @@
 ﻿using BlendTests.Windows;
 using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
@@ -33,8 +35,10 @@ namespace BlendTests
 
         private void btnTreeView_Click(object sender, RoutedEventArgs e)
         {
-            WinTreeView win = new();
-            win.Show();
+
+            
+            //WinTreeView win = new();
+            //win.Show();
         }
     }
 }
