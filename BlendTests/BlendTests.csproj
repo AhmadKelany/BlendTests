@@ -12,16 +12,10 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Compile Update="Resource.ru.Designer.cs">
-      <DependentUpon>Resource.ru.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-      <AutoGen>True</AutoGen>
-    </Compile>
-    <Compile Update="Resource.ar.Designer.cs">
-      <DependentUpon>Resource.ar.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-      <AutoGen>True</AutoGen>
-    </Compile>
+    <PackageReference Include="WPFLocalizeExtension" Version="3.9.4" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Compile Update="Resource.Designer.cs">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
@@ -30,17 +24,21 @@
   </ItemGroup>
 
   <ItemGroup>
+    <EmbeddedResource Update="Resource.hi.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+    </EmbeddedResource>
     <EmbeddedResource Update="Resource.ru.resx">
-      <LastGenOutput>Resource.ru.Designer.cs</LastGenOutput>
       <Generator>PublicResXFileCodeGenerator</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Resource.ar.resx">
-      <LastGenOutput>Resource.ar.Designer.cs</LastGenOutput>
       <Generator>PublicResXFileCodeGenerator</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Resource.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>Resource.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Resource.ur-IN.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
     </EmbeddedResource>
   </ItemGroup>
 
